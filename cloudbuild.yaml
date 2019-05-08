@@ -15,9 +15,6 @@ steps:
 - name: 'gcr.io/cloud-builders/go'
   args: ['get', '-t']
   env: ['PROJECT_ROOT=app']
-  volumes:
-  - name: 'ssh'
-    path: /root/.ssh
 
 # go install the project
 - name: 'gcr.io/cloud-builders/go'
