@@ -11,6 +11,7 @@
 # defined in the GCP Container Builder Build Trigger.
 
 # get go package dependencies using SSH
+steps:
 - name: 'gcr.io/cloud-builders/go'
   args: ['get', '-t']
   env: ['PROJECT_ROOT=app']
