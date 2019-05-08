@@ -8,7 +8,7 @@ import (
 	"sync"
 
 	"github.com/golang/protobuf/ptypes/empty"
-	hello "github.com/weathersource/svc-hello/proto"
+	hello "github.com/weathersource/test-hello/proto"
 	context "golang.org/x/net/context"
 	grpc "google.golang.org/grpc"
 	reflection "google.golang.org/grpc/reflection"
