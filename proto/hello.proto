@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package wxsrc.protobuf;
+
+option go_package = "github.com/weathersource/protorepo/go/hello";
+
+import "google/protobuf/empty.proto";
+
+service HelloService {
+
+    // SayHello implements hello.HelloService.
+    rpc SayHello (google.protobuf.Empty) returns (SayHelloResponse) {}
+}
+
+message SayHelloResponse {
+    string msg = 1;
+}
