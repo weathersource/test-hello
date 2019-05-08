@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"os"
 	"sync"
+	"time"
 
 	"cloud.google.com/go/bigtable"
 	"github.com/golang/protobuf/ptypes/empty"
@@ -41,6 +42,8 @@ func sayHealthy(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+
+	time.Sleep(30 * time.Second)
 
 	// get service account credentials for BigTable
 	var cbtConfig *jwt.Config
